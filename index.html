@@ -15,6 +15,22 @@
     />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary" />
+    <script>
+      // Restore path redirected by 404.html
+      (function () {
+        var p = window.location.search.slice(1).split('&').filter(function (s) { return s.startsWith('p='); })[0];
+        if (p) {
+          var q = window.location.search.slice(1).split('&').filter(function (s) { return s.startsWith('q='); })[0];
+          window.history.replaceState(
+            null, null,
+            window.location.pathname +
+            (p.slice(2) ? '/' + p.slice(2).replace(/~and~/g, '&') : '') +
+            (q ? '?' + q.slice(2).replace(/~and~/g, '&') : '') +
+            window.location.hash
+          );
+        }
+      }());
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
