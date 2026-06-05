@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, MessageCircle } from "lucide-react";
-import logo from "@/assets/liga-logo.png.asset.json";
+import logo from "@/assets/liga-logo.png";
 import { WHATSAPP_URL } from "@/lib/liga";
 
 const nav = [
@@ -37,7 +37,7 @@ export function Header() {
     >
       <div className="container-px mx-auto max-w-7xl flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-3">
-          <img src={logo.url} alt="LIGA Consultoria" className="h-10 md:h-12 w-auto" />
+          <img src={logo} alt="LIGA Consultoria" className="h-10 md:h-12 w-auto" />
           <span className="hidden sm:block text-[10px] uppercase tracking-[0.3em] text-gold-soft/80 leading-tight border-l border-white/10 pl-3">
             Consultoria<br />Licitatória
           </span>

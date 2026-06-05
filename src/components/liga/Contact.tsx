@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle, Mail, Phone, MapPin, Linkedin, Instagram, Facebook } from "lucide-react";
 import { FadeUp } from "./Section";
 import cta from "@/assets/cta-bg.jpg";
-import logo from "@/assets/liga-logo.png.asset.json";
+import logo from "@/assets/liga-logo.png";
 import { WHATSAPP_URL, CONTACTS } from "@/lib/liga";
 import { toast } from "sonner";
 
@@ -201,7 +201,7 @@ export function Footer() {
       <div className="container-px mx-auto max-w-7xl">
         <div className="grid md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
-            <img src={logo.url} alt="LIGA Consultoria" className="h-14 w-auto" />
+            <img src={logo} alt="LIGA Consultoria" className="h-14 w-auto" />
             <p className="mt-6 text-sm text-white/55 leading-relaxed max-w-sm">
               Consultoria Licitatória especializada em preparar empresas para
               vencer no mercado público com segurança jurídica e estratégia.
