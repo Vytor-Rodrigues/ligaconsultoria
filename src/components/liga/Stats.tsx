@@ -5,7 +5,7 @@ const stats = [
   { value: 30, suffix: "+", label: "Anos de experiência acumulada", prefix: "" },
   { value: 500, suffix: "+", label: "Processos licitatórios acompanhados", prefix: "" },
   { value: 12, suffix: "", label: "Segmentos de atuação", prefix: "" },
-  { value: 100, suffix: "%", label: "Domínio da Lei 14.133/2021", prefix: "" },
+  { value: 100, suffix: "%", label: "Domínio da Lei 14.133/2021 e Lei 13.303/2016", prefix: "" },
 ];
 
 function Counter({ to, suffix }: { to: number; suffix: string }) {
