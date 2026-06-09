@@ -1,5 +1,5 @@
 import { FadeUp } from "./Section";
-import about from "@/assets/about-team.jpg";
+import about from "@/assets/about-team.png";
 import { CheckCircle2 } from "lucide-react";
 
 const pillars = [
@@ -22,15 +22,8 @@ export function About() {
               loading="lazy"
               width={1280}
               height={1280}
-              className="relative w-full aspect-square object-cover grayscale-[20%] shadow-elegant"
+              className="relative w-full object-cover shadow-elegant"
             />
-            <div className="absolute bottom-8 left-8 right-8 bg-ink/90 backdrop-blur-md p-6 border-l-2 border-gold">
-              <p className="font-display italic text-white/90 text-lg leading-snug">
-                "Preparar empresas para atuar com segurança, estratégia e
-                eficiência no mercado público."
-              </p>
-              <p className="mt-3 text-xs uppercase tracking-[0.25em] text-gold">— Nossa Missão</p>
-            </div>
           </div>
         </FadeUp>
 
