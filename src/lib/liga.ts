@@ -7,6 +7,5 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=${WHATSAPP_MSG
 export const CONTACTS = {
   email: "licitacoes@ligaconsultoria.com.br",
   whatsapp: "(51) 3444-6872",
-  divalessa: "(11) 91052-3300",
-  lisiane: "(51) 9129-8787",
+  lisiane: "(51) 99129-8787",
 };

@@ -6,7 +6,7 @@ const diffs = [
   { icon: ShieldCheck, title: "Redução de riscos documentais", desc: "Análise minuciosa que evita desclassificações." },
   { icon: Briefcase, title: "Experiência prática comprovada", desc: "Décadas em licitações reais e diferentes segmentos." },
   { icon: Route, title: "Do edital ao contrato", desc: "Acompanhamento completo em todas as fases do processo." },
-  { icon: BookOpen, title: "Domínio da Lei 14.133/2021", desc: "Atualização constante com a nova legislação." },
+  { icon: BookOpen, title: "Domínio da Lei 14.133/2021 e Lei 13.303/2016", desc: "Atualização constante com a nova legislação e legislação de empresas estatais." },
   { icon: Trophy, title: "Estratégias competitivas", desc: "Mais propostas vencedoras com margem saudável." },
 ];
 

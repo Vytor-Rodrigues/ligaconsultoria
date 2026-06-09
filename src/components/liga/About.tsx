@@ -53,9 +53,35 @@ export function About() {
             <div className="mt-6 space-y-5 text-muted-foreground leading-relaxed">
               <p>
                 A <strong className="text-foreground">LIGA Consultoria Licitatória</strong>{" "}
-                nasceu da união de profissionais com sólida experiência em
+                nasceu da união de duas profissionais, Lisiane e Gabriela, cuja
+                parceria inspirou o nome da empresa. Com sólida experiência em
                 licitações, gestão administrativa, relacionamento empresarial e
-                assessoria jurídica.
+                assessoria jurídica, ambas compartilharam o propósito de oferecer
+                soluções estratégicas e eficientes para empresas que desejam atuar
+                no mercado público.
+              </p>
+              <p>
+                Com o passar dos anos, Gabriela decidiu seguir sua vocação de
+                infância e direcionou sua trajetória para a área da saúde, onde
+                encontrou a realização de um grande sonho profissional. A partir
+                desse momento, Lisiane assumiu integralmente a condução da LIGA
+                Consultoria Licitatória, consolidando sua atuação em uma área
+                pela qual já era apaixonada desde a adolescência.
+              </p>
+              <p>
+                Movida pelo compromisso com a excelência, ética e resultados,
+                Lisiane transformou a LIGA em uma referência no suporte a
+                empresas que buscam participar de licitações e contratar com a
+                Administração Pública. Sua experiência, dedicação e constante
+                atualização permitem oferecer um atendimento personalizado,
+                seguro e estratégico, contribuindo para o crescimento e o
+                sucesso dos clientes em um mercado cada vez mais competitivo.
+              </p>
+              <p>
+                Hoje, a LIGA Consultoria Licitatória representa não apenas a
+                história de uma parceria, mas a continuidade de um sonho
+                construído com conhecimento, dedicação e paixão pelo universo
+                das licitações públicas.
               </p>
               <p>
                 Atuamos lado a lado com nossos clientes, do estudo do edital à

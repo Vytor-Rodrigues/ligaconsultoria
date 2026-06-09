@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle, Mail, Phone, MapPin, Linkedin, Instagram, Facebook } from "lucide-react";
+import { ArrowRight, MessageCircle, Mail, Phone, MapPin, Building2, Linkedin, Instagram, Facebook } from "lucide-react";
 import { FadeUp } from "./Section";
 import cta from "@/assets/cta-bg.jpg";
 import logo from "@/assets/liga-logo.png";
@@ -96,8 +96,7 @@ export function Contact() {
               {[
                 { icon: Mail, label: "E-mail", value: CONTACTS.email, href: `mailto:${CONTACTS.email}` },
                 { icon: MessageCircle, label: "WhatsApp Comercial", value: CONTACTS.whatsapp, href: WHATSAPP_URL },
-                { icon: Phone, label: "Divalessa", value: CONTACTS.divalessa, href: "tel:+5511910523300" },
-                { icon: Phone, label: "Lisiane", value: CONTACTS.lisiane, href: "tel:+555191298787" },
+                { icon: Phone, label: "Lisiane", value: CONTACTS.lisiane, href: "tel:+5551991298787" },
               ].map((c) => (
                 <a
                   key={c.label}
@@ -121,9 +120,28 @@ export function Contact() {
               ))}
             </div>
           </FadeUp>
+
+          <FadeUp delay={0.2}>
+            <div className="mt-8 flex items-start gap-4">
+              <div className="h-11 w-11 rounded-full bg-secondary border border-border inline-flex items-center justify-center shrink-0">
+                <Building2 className="h-4 w-4" />
+              </div>
+              <div>
+                <div className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+                  Escritórios
+                </div>
+                <p className="mt-1 text-sm text-muted-foreground leading-relaxed">
+                  Contamos com estrutura de atendimento em{" "}
+                  <strong className="text-foreground">Porto Alegre/RS</strong> e{" "}
+                  <strong className="text-foreground">São Paulo/SP</strong>,
+                  permitindo atuação estratégica em todo o território nacional.
+                </p>
+              </div>
+            </div>
+          </FadeUp>
         </div>
 
-        <FadeUp delay={0.2}>
+        <FadeUp delay={0.25}>
           <motion.form
             onSubmit={onSubmit}
             className="bg-card border border-border p-8 md:p-10 shadow-elegant relative overflow-hidden"
@@ -253,7 +271,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 text-gold/70 shrink-0" />
-                Atendimento em todo o Brasil
+                Porto Alegre/RS e São Paulo/SP
               </li>
             </ul>
           </div>

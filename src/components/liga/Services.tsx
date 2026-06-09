@@ -11,9 +11,9 @@ import {
 const services = [
   { icon: Briefcase, title: "Consultoria em Licitações", desc: "Preparação completa para participação em processos licitatórios públicos." },
   { icon: Headphones, title: "Suporte em Pregões", desc: "Acompanhamento estratégico em pregões eletrônicos e presenciais." },
-  { icon: FileText, title: "Recursos Administrativos", desc: "Impugnações, recursos e manifestações em todas as fases." },
+  { icon: FileText, title: "Impugnações e Recursos", desc: "Impugnações, recursos e manifestações em todas as fases." },
   { icon: FileSignature, title: "Gestão de Contratos", desc: "Acompanhamento técnico da execução contratual e aditivos." },
-  { icon: GraduationCap, title: "Treinamentos", desc: "Capacitação de equipes internas para o setor público." },
+  { icon: GraduationCap, title: "Treinamento e Mentoria Individual", desc: "Capacitação de equipes internas para o setor público. Mentoria para pessoas que querem atuar como Consultor." },
   { icon: Search, title: "Auditoria Licitatória", desc: "Diagnóstico, organização e melhoria de processos." },
 ];
 
