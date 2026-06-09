@@ -1,5 +1,4 @@
 import { FadeUp, SectionHeader } from "./Section";
-import { Quote } from "lucide-react";
 
 const lisiane = {
   name: "Dra. Lisiane Teixeira",
@@ -12,26 +11,6 @@ const lisiane = {
   photo: undefined as string | undefined,
 };
 
-const testimonials = [
-  {
-    quote:
-      "A LIGA transformou a forma como participamos de licitações. Aumentamos drasticamente nossa taxa de êxito em pregões eletrônicos.",
-    author: "Diretor Comercial",
-    company: "Indústria do Setor de Tecnologia",
-  },
-  {
-    quote:
-      "Profissionalismo e domínio técnico impecáveis. A análise de editais nos preveniu de armadilhas que custariam caro.",
-    author: "Gerente de Contratos",
-    company: "Empresa de Engenharia",
-  },
-  {
-    quote:
-      "Acompanhamento contínuo e estratégico. Hoje atuamos com segurança em diversos estados do país.",
-    author: "Sócio-Proprietário",
-    company: "Fornecedor de Serviços Corporativos",
-  },
-];
 
 export function Team() {
   return (
@@ -96,44 +75,20 @@ export function Testimonials() {
           eyebrow="Prova Social"
           title="Empresas que escolheram crescer no mercado público."
         />
-        <div className="mt-16 grid md:grid-cols-3 gap-6">
-          {testimonials.map((t, i) => (
-            <FadeUp key={i} delay={i * 0.08}>
-              <div className="relative h-full bg-card border border-border p-10 hover:border-gold/50 transition-all hover:-translate-y-1">
-                <Quote className="absolute top-6 right-6 h-10 w-10 text-gold/15" />
-                <p className="font-display italic text-lg leading-relaxed text-foreground/90">
-                  "{t.quote}"
-                </p>
-                <div className="mt-8 pt-6 border-t border-border">
-                  <p className="font-medium text-sm">{t.author}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{t.company}</p>
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-6">
+          {clientSectors.map((sector, i) => (
+            <FadeUp key={sector} delay={i * 0.07}>
+              <div className="group h-full bg-card border border-border hover:border-gold/60 p-8 flex items-center justify-center text-center transition-all hover:shadow-elegant hover:-translate-y-1">
+                <div>
+                  <div className="mx-auto mb-4 h-px w-8 bg-gold group-hover:w-16 transition-all duration-500" />
+                  <p className="font-display text-base md:text-lg font-medium leading-snug text-foreground/90 group-hover:text-foreground transition-colors">
+                    {sector}
+                  </p>
                 </div>
               </div>
             </FadeUp>
           ))}
         </div>
-
-        <FadeUp delay={0.15}>
-          <div className="mt-20">
-            <div className="flex items-center gap-3 justify-center mb-8">
-              <span className="h-px w-8 bg-gold" />
-              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
-                Empresas que já atuei
-              </span>
-              <span className="h-px w-8 bg-gold" />
-            </div>
-            <div className="flex flex-wrap justify-center gap-3">
-              {clientSectors.map((sector) => (
-                <span
-                  key={sector}
-                  className="px-5 py-2 border border-border bg-card text-sm text-muted-foreground hover:border-gold/50 hover:text-foreground transition-colors"
-                >
-                  {sector}
-                </span>
-              ))}
-            </div>
-          </div>
-        </FadeUp>
       </div>
     </section>
   );
